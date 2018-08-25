@@ -2,10 +2,14 @@
   <head>
     <title>Prévision Météo</title>
     <script src="Meteo.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
+
   <body>
-    <div class="meteo">
+    <div id="meteo">
       <h1>Météo</h1>
+
+      <p>Les données affichées viennent de <a href="https://www.prevision-meteo.ch" target="_blank">www.prevision-meteo.ch</a></p>
 
       <form id="form-by-city">
         Ville: <input type="text" name="city" />
@@ -14,14 +18,16 @@
       </form>
 
       <form id="form-by-lat-lng">
-        Latitude: <input type="number" name="lat" />
-        Longitude: <input type="number" name="lng" />
+        Latitude: <input type="number" name="lat" min="41.3" max="51.9" step="any" /> 
+        Longitude: <input type="number" name="lng" min="-5.2" max="10.7" step="any" />
 
         <input type="submit" />
       </form>
 
-      <div>
-        <h2></h2>
+      <div id="display">
+        <h2 id="title"></h2>
+        <nav id="nav"></nav>
+        <div id="day"></div>
       </div>
     </div>
 
