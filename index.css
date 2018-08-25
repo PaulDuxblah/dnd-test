@@ -1,0 +1,64 @@
+body, html {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#meteo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#display {
+  margin-top: 50px;
+}
+
+#nav {
+  display: flex;
+}
+
+#nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+}
+
+#nav li {
+  list-style: none;
+}
+
+#nav li:hover {
+  cursor: pointer;
+}
+
+#nav li.active {
+  color: blue;
+}
+
+#display .header {
+}
+
+#hours {
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 99vw;
+}
+
+#hours div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#hours div .header {
+  width: 100%;
+}
+
+#hours div p {
+  margin: 10px 0;
+}
